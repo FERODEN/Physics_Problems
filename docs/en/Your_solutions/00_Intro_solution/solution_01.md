@@ -26,15 +26,27 @@ $$
 $$
 
 ### 3) Cross product
-For $\vec{a} = [a_x,a_y,a_z]$ and $\vec{b} = [b_x,b_y,b_z]$,
+
+For $\vec{a} = [a_x, a_y, a_z]$ and $\vec{b} = [b_x, b_y, b_z]$,
 
 $$
-\vec{a}\times\vec{b} =
-\begin{bmatrix}
-a_y b_z - a_z b_y \\
-a_z b_x - a_x b_z \\
-a_x b_y - a_y b_x
-\end{bmatrix}
+\vec{a} \times \vec{b} =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+a_x & a_y & a_z \\
+b_x & b_y & b_z
+\end{vmatrix}
+$$
+
+Expanding the determinant:
+
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} =
+& (a_y b_z - a_z b_y)\mathbf{i} \\
+& - (a_x b_z - a_z b_x)\mathbf{j} \\
+& + (a_x b_y - a_y b_x)\mathbf{k}
+\end{aligned}
 $$
 
 ### 4) Angle between two vectors
@@ -96,29 +108,18 @@ $$
 
 ---
 
-## (c) Cross product $\vec{a}\times\vec{b}$
+## (c) Cross product 
 
-Let $\vec{a}=[2,1,-3]$ and $\vec{b}=[4,-2,1]$.
-
-### $x$-component
-$$
-(\vec{a}\times\vec{b})_x = a_y b_z - a_z b_y = (1)(1) - (-3)(-2) = 1 - 6 = -5
-$$
-
-### $y$-component
-$$
-(\vec{a}\times\vec{b})_y = a_z b_x - a_x b_z = (-3)(4) - (2)(1) = -12 - 2 = -14
-$$
-
-### $z$-component
-$$
-(\vec{a}\times\vec{b})_z = a_x b_y - a_y b_x = (2)(-2) - (1)(4) = -4 - 4 = -8
-$$
-
-So,
+Compute in i, j, k notation:
 
 $$
-\vec{a}\times\vec{b} = [-5,\,-14,\,-8]
+\vec{a} \times \vec{b} = (1 * 1 - (-3) * (-2))\mathbf{i} - (2 * 1 - (-3) * 4)\mathbf{j} + (2 * (-2) - 1 * 4)\mathbf{k}
+$$
+
+Simplify:
+
+$$
+\vec{a} \times \vec{b} = -5 \mathbf{i} - 14 \mathbf{j} - 8 \mathbf{k}
 $$
 
 **Answer (c):**
